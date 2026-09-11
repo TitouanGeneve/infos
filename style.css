@@ -69,16 +69,22 @@ body{
 }
 
 /* Photos */
-.image-photo{
+.image-photo {
+    display: block;
+    width: 100%;
     max-width: 200px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px 8px 0 0;
 }
 
 .photos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
     margin-left: 15px;
-    margin-right:15px;
+    margin-right: 15px;
 }
 
 .photo {
@@ -87,16 +93,19 @@ body{
     border-radius: 8px;
     transition: transform 0.3s, border-color 0.3s;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 0 auto;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .photo:hover {
     transform: translateY(-5px);
 }
 
-.photo-card img {
+.photo img {
     display: block;
     width: 100%;
     aspect-ratio: 4 / 3;
