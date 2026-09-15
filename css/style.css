@@ -107,13 +107,15 @@ h2{
 /* Compétences */
 .skills, .work, .projets{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 10px;
     gap: 10px;
 }
 
 .cases{
-    width: 50%;
+    flex: 1 1 calc(50% - 10px);
+    min-width: 0;
     padding: 20px;
     box-sizing: border-box;
     background-color: var(--bg-alt);
@@ -302,5 +304,14 @@ footer a{
 @media screen and (max-width: 800px) {
     .navbar {
         display: none;
+    }
+
+    .skills, .work, .projets {
+        flex-direction: column;
+    }
+
+    .cases {
+        flex-basis: 100%;
+        width: 100%;
     }
 }
