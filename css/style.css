@@ -54,7 +54,7 @@ footer a:hover,
 }
 
 .name span{
-    color:#38BDF8
+    color:#38BDF8;
 }
 
 .présentation{
@@ -103,7 +103,7 @@ footer a:hover,
     align-items: flex-end;
     min-height: 290px;
     padding: 15px 15px 0;
-    background: linear-gradient(145deg, rgba(56, 189, 248, 0.18), rgba(21, 33, 63, 0.9));
+    background: linear-gradient(145deg, #15213f, #101b35);
     border: 1px solid rgba(56, 189, 248, 0.55);
     border-radius: 18px;
     overflow: hidden;
@@ -346,6 +346,15 @@ footer a{
     text-decoration: none;
     color:white;
     transition: color 0.3s ease;
+}
+
+.go-up img{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    object-fit: contain;
+    align-items: left;
 }
 
 /* Média */
